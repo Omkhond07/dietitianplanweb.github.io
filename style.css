@@ -1,0 +1,691 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url('https://soleabeautylounge.com/wp-content/uploads/2021/12/Dietitian- and-a-Nutritionist.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9; 
+/*   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4rw2Qej2brZNZp0dNFvhicGVIUkekpsLsVFLVL7asdGBPhurdkpwjZcTNU_1mQI6aU8M&usqp=CAU");   */
+   
+}
+
+.navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+/*      background-color: black;*/
+      padding: 10px 20px;
+
+
+    }
+    .navbar .logo a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .navbar .menu a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    .navbar .menu a:hover {
+      color: #f0a500;
+      background: #575757;
+      border-radius: 5px;
+    }
+    .navbar .logo a, .navbar .menu a {
+    color: white;
+     text-decoration: none;
+     padding: 10px;
+    }
+    
+   
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  animation: fadeIn 3s ease-in-out;
+}
+
+.hero-section button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 4s ease-in-out;
+}
+
+.hero-section button:hover {
+  background-color: #45a049;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 20px;
+/*  background-color: rgba(255, 255, 255, 0.9);*/
+/*  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);*/
+  border-radius: 10px;
+  color: black;
+  animation: slideUp 1s ease-in-out;
+
+  
+}
+
+
+    
+
+
+.container {
+      text-align: center;
+      padding: 40px;
+      
+
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      justify-items: center;
+    }
+
+    .image-container {
+      background: white;
+      border-radius: 20px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 280px;
+     transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      border: 2px solid black;
+
+
+    }
+
+
+
+    .image-container:hover {
+      transform: scale(1.0) rotate(2deg);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .image-container img {
+      width: 100%;
+      border-radius: 15px;
+      transition: transform 0.4s;
+      height: 200px;
+    }
+
+    .image-container:hover img {
+      transform: scale(1.1);
+    }
+
+    .image-container p {
+      font-weight: bold;
+      margin: 15px 0 5px;
+      font-size: 18px;
+    }
+
+    .description {
+      font-size: 14px;
+      color: #555;
+      text-align: justify;
+    }
+
+.form-container {
+  display: none;
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  color: black;
+  animation: slideUp 0.5s ease-in-out;
+  background: #fff;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4CAF50;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-container input,
+.form-container select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+.form-container button:hover {
+  background-color: #45a049;
+}
+
+.output-container {
+  display: none;
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  color: black;
+  animation: slideUp 0.5s ease-in-out;
+}
+
+.output-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4CAF50;
+}
+
+.output-container p {
+  margin-bottom: 10px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 1.5rem 0;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease;
+}
+
+th, td {
+  padding: 1.2rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+th {
+  background: #4CAF50;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+tr:nth-child(even) {
+  background: #f8f9fa;
+}
+
+tr:hover {
+  background: #e8f5e9;
+  transition: background 0.3s ease;
+}
+
+td {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Making the table scrollable on small screens */
+@media (max-width: 768px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  th, td {
+    min-width: 150px;
+  }
+}
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+}
+
+.card {
+  width: 280px;
+  height: 350px; /* Ensures all cards have the same height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card img {
+  width: 100%;
+  height: 200px; /* Fixed height for images */
+  object-fit: cover; /* Ensures proper cropping without distortion */
+  border-radius: 8px;
+}
+
+.card p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .image-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 items per row on smaller screens */
+  }
+}
+
+@media (max-width: 500px) {
+  .image-grid {
+      grid-template-columns: repeat(1, 1fr); /* 1 item per row on mobile */
+  }
+}
+
+
+/* Section Styling */
+.section {
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Dark Overlay for Better Readability */
+.section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.section * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Hover Effect */
+.section:hover {
+  transform: scale(1.03);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section h1 {
+      font-size: 2rem;
+  }
+
+  .hero-section p {
+      font-size: 1.2rem;
+  }
+}
+/* General styles */
+
+
+/* Box Effect for Forms and Containers */
+.box-effect {
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.box-effect:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.workout-exercises {
+  display: flex;           /* Use flexbox for layout */
+  flex-wrap: wrap;        /* Allow items to wrap to the next row */
+  gap: 15px;              /* Space between exercises */
+  margin-top: 10px;
+  justify-content: center;  /* Center exercises horizontally */
+}
+
+.exercise {
+  border: 1px solid #ddd;  /* Subtle border */
+  padding: 10px;
+  text-align: center;     /* Center text content */
+  width: 200px;            /* Fixed width for each exercise */
+  box-sizing: border-box;   /* Include padding and border in the width */
+  border-radius: 8px;     /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.exercise img {
+  max-width: 10%;        /* Image takes up 100% of the container's width */
+  height: auto;           /* Maintain aspect ratio */
+  margin-bottom: 8px;      /* Space below the image */
+  border-radius: 6px;     /* Rounded corners for the images */
+}
+
+/*  Optional: Add a hover effect */
+.exercise:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* General Styles */
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  padding: 15px 50px;
+}
+
+.navbar .logo a, .menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  border: none;
+  
+}
+
+/* Info Boxes */
+.info-box {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 300px;
+  max-width: 900px;
+  /* background: white; */
+  border-radius: 15px;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 20px;
+  transform: scale(0.9);
+  transition: all 0.3s ease-in-out;
+/*  border: 7px solid  #28a745;*/
+  background-color: white;
+
+
+}
+
+.info-box:hover {
+  transform: scale(1);
+}
+
+.image {
+  width: 40%;
+  height: 200px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  transition: 0.5s;
+  
+}
+
+.image img:hover {
+  transform: scale(1.1);
+}
+
+.info {
+  width: 55%;
+}
+
+.info h2 {
+  color: #770927;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.info p, .info ul {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info ul li {
+  margin-bottom: 8px;
+}
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #333;
+  padding: 15px 20px;
+}
+
+.navbar .logo a, .menu a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+}
+/* General styling for the output container */
+#outputContainer {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+/* Styling for the download button */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Styling for headings and paragraphs in the output */
+#outputContainer h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+#outputContainer h4 {
+    color: #555;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#outputContainer p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* Styling for images in the workout plan */
+#outputContainer img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    #outputContainer {
+        padding: 15px;
+    }
+
+    table th, table td {
+        padding: 8px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
