@@ -1,0 +1,512 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: url('https://soleabeautylounge.com/wp-content/uploads/2021/12/Dietitian- and-a-Nutritionist.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  background-color: #f9f9f9; 
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+.navbar .logo a {
+  font-size: 24px;
+  color: #f0a500;
+  font-weight: bold;
+}
+
+.navbar .menu {
+  display: flex;
+  /* Changed to flex for alignment */
+}
+
+.navbar .menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0 15px;
+}
+
+.navbar .menu a:hover {
+  text-decoration: underline; /* Added hover effect */
+  color: #f0a500;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  animation: fadeIn 3s ease-in-out;
+}
+
+.hero-section button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 4s ease-in-out;
+}
+
+.hero-section button:hover {
+  background-color: #45a049;
+}
+
+/* Container */
+.container {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  color: black;
+  animation: slideUp 1s ease-in-out;
+  text-align: center;
+}
+
+/* Image Grid */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+}
+
+.image-container {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 280px;
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid black;
+}
+
+.image-container:hover {
+  transform: scale(1.0) rotate(2deg);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.image-container img {
+  width: 100%;
+  border-radius: 15px;
+  transition: transform 0.4s;
+  height: 200px;
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+}
+
+.image-container p {
+  font-weight: bold;
+  margin: 15px 0 5px;
+  font-size: 18px;
+}
+
+.description {
+  font-size: 14px;
+  color: #555;
+  text-align: justify;
+}
+
+/* Form Container */
+.form-container {
+  display: none;
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  color: black;
+  animation: slideUp 0.5s ease-in-out;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4CAF50;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-container input,
+.form-container select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+/*  background-color: #4CAF50;*/
+  background-color: #770927;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.form-container button:hover {
+  background-color: #770927;
+}
+
+/* Output Container */
+.output-container {
+  display: none;
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  color: black;
+  animation: slideUp 0.5s ease-in-out;
+}
+
+.output-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4CAF50;
+}
+
+.output-container p {
+  margin-bottom: 10px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 1.5rem 0;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease;
+}
+
+th, td {
+  padding: 1.2rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+th {
+  background: #4CAF50;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+tr:nth-child(even) {
+  background: #f8f9fa;
+}
+
+tr:hover {
+  background: #e8f5e9;
+  transition: background 0.3s ease;
+}
+
+td {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  th, td {
+    min-width: 150px;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section p {
+    font-size: 1.2rem;
+  }
+
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .navbar {
+    flex-direction: row; /* Change navbar layout on small screens */
+    justify-content: center; /* Center navbar on mobile */
+    align-items: center; /* Align items in the center */
+    padding: 10px 0; /* Adjust padding */
+  }
+
+  .navbar .logo {
+    margin-right: auto; /* Push menu items to the right */
+  }
+
+  .navbar .menu {
+    flex-direction: row; /* Horizontal layout */
+    width: auto; /* Auto width for navbar items */
+    margin-top: 0; /* Remove top margin */
+  }
+
+  .navbar .menu a {
+    margin: 0 10px; /* Adjust spacing for menu items */
+  }
+}
+
+@media (max-width: 500px) {
+  .image-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* General styles */
+.box-effect {
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.box-effect:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.workout-exercises {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.exercise {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.exercise img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 8px;
+  border-radius: 6px;
+}
+
+.exercise:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Info Boxes */
+.info-box {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 300px;
+  max-width: 900px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 20px;
+  transform: scale(0.9);
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+.info-box:hover {
+  transform: scale(1);
+}
+
+.image {
+  width: 40%;
+  height: 200px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+
+.image img:hover {
+  transform: scale(1.1);
+}
+
+.info {
+  width: 55%;
+}
+
+.info h2 {
+  color: #770927;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.info p, .info ul {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info ul li {
+  margin-bottom: 8px;
+}
+
+/* General styling for the output container */
+#outputContainer {
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for headings and paragraphs in the output */
+#outputContainer h3 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+#outputContainer h4 {
+  color: #555;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#outputContainer p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+/* Styling for images in the workout plan */
+#outputContainer img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#outputContainer button{
+
+  background-color: #770927;
+  color: white;
+  border-radius: 5px;
+  height: 30px;
+  width: 150px;
+  padding: 3px;
+  border: none;
+
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  #outputContainer {
+    padding: 15px;
+  }
+
+  table th, table td {
+    padding: 8px;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+  }
+}
+
