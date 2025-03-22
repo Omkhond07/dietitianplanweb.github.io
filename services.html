@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Full-Screen Slideshow</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        
+
+        .slideshow-container {
+            width: 100%;
+            height: 90vh;
+            position: relative;
+            overflow: hidden;
+            
+            margin-top: 1px;
+        }
+
+        .mySlides img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+
+        .text-container {
+            position: absolute;
+            bottom: 15%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            color: white;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .text-container h2 {
+            font-size: 26px;
+            margin-bottom: 10px;
+
+        }
+
+        .text-container p {
+            font-size: 18px;
+            max-width: 600px;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 20px;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            transition: 0.6s ease;
+            border-radius: 50%;
+            user-select: none;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .prev { left: 20px; }
+        .next { right: 20px; }
+
+        .prev:hover, .next:hover { background: rgba(0, 0, 0, 0.8); }
+
+
+    .image-container {
+      background: white;
+      border-radius: 20px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 300px;
+     transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      border: 2px solid black;
+
+    }
+    .image-container:hover {
+/*      transform: scale(1.0) rotate(2deg);*/
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
+    body{
+        background-color: #333;
+
+    }
+    .image-container p{
+        color: #770927;
+    }
+    .container h2{
+        color: white;
+    }
+
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html">Dietician</a>
+        </div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="diet.html">Diet</a>
+            <a href="review.html">Reviews</a>
+        </div>
+    </div>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="https://img.freepik.com/premium-photo/bowl-buddha-buckwheat-pumpkin-chicken-fillet-avocado-carrots-black-background-top-view-free-space-your-text_187166-18010.jpg?w=900">
+            <div class="text-container">
+                <h2>Achieve Low Carb</h2>
+                <p>A low-carb diet helps in weight management and stabilizes blood sugar levels.</p>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="https://img.freepik.com/free-photo/top-view-cutting-board-with-groceries_23-2148262124.jpg?w=900">
+            <div class="text-container">
+                <h2>Achieve High Protein</h2>
+                <p>High-protein diets support muscle growth and keep you feeling full longer.</p>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="https://img.freepik.com/premium-photo/boiled-green-buckwheat-dishes-menu-free-copy-space-top-view_187166-58707.jpg?w=900">
+            <div class="text-container">
+                <h2>Achieve Vegetarian</h2>
+                <p>A vegetarian diet is packed with essential nutrients and promotes a healthy lifestyle.</p>
+            </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+
+
+
+      <!-- Services Section -->
+  <div class="container" id="services">
+    <h2>Our Services</h2>
+    <div class="image-grid">
+      <div class="image-container">
+        <img src="https://media.istockphoto.com/id/464843904/photo/atkins-diet.jpg?s=2048x2048&w=is&k=20&c=1BxjVnN-z0Sbzig9Th_7NAQ2RmWwpthRZ7lLaCXeStA=" alt="Low Carb" />
+        <p>Low Carb Diet</p>
+        <div class="description">Focuses on reducing carbohydrate intake to promote fat burning and weight loss. This diet improves insulin sensitivity and helps manage blood sugar levels effectively.</div>
+      </div>
+
+      <div class="image-container">
+        <img src="https://media.istockphoto.com/id/535464822/photo/sorrel-soup-with-egg.jpg?s=2048x2048&w=is&k=20&c=pvodG1Ci_hVA9BugmdLeMbPTu6SsLtGpzzc8vs2etSc=" alt="High Protein" />
+        <p>High Protein Diet</p>
+        <div class="description">Essential for muscle building and repair, this diet supports weight management and reduces hunger by enhancing satiety with protein-rich foods.</div>
+      </div>
+
+      <div class="image-container">
+        <img src="https://media.istockphoto.com/id/1488883191/photo/group-oh-healthy-vegan-food.jpg?s=612x612&w=0&k=20&c=Yq5WplWnkd5QyApBYq1vkVT0WyBFHfWA5fFlJ1UwBF4=" alt="Vegan" />
+        <p>Vegan Diet</p>
+        <div class="description">A plant-based diet excluding all animal products, rich in fiber, vitamins, and antioxidants, promoting heart health and environmental sustainability.</div>
+      </div>
+
+      <div class="image-container">
+        <img src="https://media.istockphoto.com/id/461794833/photo/lamb-steak-with-sauce.jpg?s=2048x2048&w=is&k=20&c=byVkE2hmSUWjSFbbenATA2wxIADiY2Wvy_pqLtBdyEQ=" alt="Non Veg" />
+        <p>Non-Vegetarian Diet</p>
+        <div class="description">Incorporates a variety of meats, providing essential nutrients like iron, zinc, and vitamin B12, supporting muscle health and energy levels.</div>
+      </div>
+
+      <div class="image-container">
+        <img src="https://media.istockphoto.com/id/1136546873/vector/bmi-body-mass-index-banner-web-icon-for-presentation-body-weight-heart-rate-measurement-and.jpg?s=1024x1024&w=is&k=20&c=5GACfIlRjMsYRdu1TyidkAcZPn0iPmzJvafEd1inqos=" alt="BMI Calculator" />
+        <p>BMI Calculator</p>
+        <div class="description">A tool to measure Body Mass Index, helping you understand your body composition and assess health risks related to weight.</div>
+      </div>
+
+      <div class="image-container">
+        <img src="https://media.istockphoto.com/id/1279902517/photo/be-as-strong-as-you-were-born-to-be.jpg?s=2048x2048&w=is&k=20&c=bwzG-UqtsshRmmY3NurjOf8uUrbsguFu-Hot-mMGBBA=" alt="Workout" />
+        <p>Workout Plans</p>
+        <div class="description">Personalized fitness routines designed to enhance physical strength, improve cardiovascular health, and support dietary goals effectively.</div>
+      </div>
+    </div>
+  </div>
+
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+
+        setInterval(() => { plusSlides(1); }, 3000);
+    </script>
+    <footer>
+        <div class="footer-section">
+            <h3>About</h3>
+            <p>91 7776982237<br> dietplan07@gmail.com</p>
+        </div>
+        <div class="footer-section">
+            <h3>Latest News</h3>
+            <p>New Meal Plans Launched: Discover our personalized meal plans tailored for various dietary needs and lifestyles, now available! </p>
+        </div>
+        <div class="footer-section">
+            <h3>Information</h3>
+            
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Diet</li>
+                <li>Reviews</li>
+            
+        </div>
+        <div class="footer-section follow us">
+            <h2>Follow US </h2>
+    
+                <li> instagram</li>
+                <li>LinkedIn</li>
+                <li>facebook</li>
+               
+        
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Online Diet plan System. All Rights Reserved.</p>
+          </div>
+    </footer>
+
+</body>
+</html>
+
